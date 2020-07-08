@@ -25,7 +25,7 @@ class EntryControler {
         self.entries.remove(at: index)
     }
     
-    func doSomething() {
+    func doSomethingElse() {
         
     }
 }
