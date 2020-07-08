@@ -21,9 +21,7 @@ class EntryControler {
     }
     
     func deleteEntry(entry: Entry) {
-//        Paused here because I need equatable on the model to continue
-//        let entryToDelete = entries.firstIndex
-        
+        guard let index = entries.firstIndex(of:  entry) else {return}
+        self.entries.remove(at: index)
     }
-    
 }
